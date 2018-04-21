@@ -1,0 +1,26 @@
+package Output_Of_Java_Programs;
+
+import java.util.Random;
+
+public class demo29 {
+
+	private static Random rd = new Random();
+
+	public static void main(String[] args) {
+		StringBuffer word = null;
+		switch (rd.nextInt(2)) {
+		case 1:
+			word = new StringBuffer('P');
+		case 2:
+			word = new StringBuffer('G');
+		default:
+			word = new StringBuffer('M');
+		}
+		word.append('a');
+		word.append('i');
+		word.append('n');
+		System.out.println(word); //ain
+
+	}
+
+}
